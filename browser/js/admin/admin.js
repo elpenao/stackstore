@@ -170,7 +170,6 @@ app.factory('AdminFactory', function($http) {
             });
         },
         toggleAdmin: function(user) {
-            console.log("here")
             return $http.put('/api/user/toggle',user).then(function(response) {
                 return response.data;
             });
