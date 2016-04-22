@@ -37,28 +37,6 @@ app.controller("OrdersCtrl", function($scope, $state, allMyOrders, orderDetails,
     $scope.selectRow = function(order){
         $scope.orderDetails = order;
     }
-    // function DialogController() {
-    //       $scope.hide = function() {
-    //         $mdDialog.hide();
-    //       };
-    //       $scope.cancel = function() {
-    //         $mdDialog.cancel();
-    //       };
-    //       $scope.answer = function(answer) {
-    //         $mdDialog.hide(answer);
-    //       };
-    // }
-    // $scope.showSignup = function(ev) {
-    //     var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
-    //     $mdDialog.show({
-    //             controller: DialogController,
-    //             templateUrl: 'js/signup/signup.html',
-    //             parent: angular.element(document.body),
-    //             targetEvent: ev,
-    //             clickOutsideToClose: true,
-    //             fullscreen: useFullScreen
-    //         })
-    // };
 });
 
 app.config(function($stateProvider) {
